@@ -1,0 +1,133 @@
+
+.content_conteiner {
+    margin-top: 100px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; /* добавляем, чтобы потом позиционировать картинки по низу */
+    min-height: 500px; /* или auto, если есть фон */
+  }
+  
+.content_h1{
+    font-size: 46px;
+}
+.content_p1{
+    margin-top: 40px;
+    width: 50%;
+    font-size: 26px;
+}
+.content_p2{
+    width: 40%;
+    margin-top: 40px;
+    
+    background-color: rgba(255, 255, 255, 0.3);
+
+    border-radius: 30px;
+    padding: 30px;
+}
+
+/* Content.css */
+.content_gtrlConteiner {
+    position: relative;
+    height: 400px; /* Фиксированная высота контейнера */
+}
+
+.content_gtrl {
+    width: 300px;
+    position: absolute;
+    z-index: 3;
+    transform: scaleX(-1);
+    right: 200px; /* Позиционирование по правому краю */
+    top: -90px;  /* Поднимаем выше (можно регулировать) */
+}
+
+.content_gtrlBG1 {
+    background-color: yellow;
+    width: 340px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 150px;
+    box-shadow: -30px 20px 10px rgb(194, 199, 228, 0.7);
+    right: 180px;
+    top: 10px;
+}
+
+
+
+
+
+
+  /* Обёртки с анимацией */
+/* Обёртки с анимацией */
+.float-wrapper {
+    position: absolute;
+    animation: floatUpDown 4s ease-in-out infinite;
+    z-index: 3;
+  }
+  
+  /* Индивидуальное позиционирование */
+  .float-wrapper.idea {
+    left: 460px;
+    top: 500px;
+    animation-delay: 0s;
+  }
+  
+  .float-wrapper.grow {
+    left: 560px;
+    top: 400px;
+    animation-delay: 0.3s;
+  }
+  
+  .float-wrapper.team {
+    left: 700px;
+    top: 320px;
+    animation-delay: 0.6s;
+  }
+  
+  /* Сами картинки с поворотом */
+  .content_idea {
+    width: 40px;
+    transform: rotate(-30deg);
+  }
+  
+  .content_grow {
+    width: 60px;
+    transform: rotate(-40deg);
+  }
+  
+  .content_team {
+    width: 40px;
+    transform: rotate(-25deg);
+  }
+  .strelka img{
+    width: 100px;
+    height: auto;
+    transform: scaleX(-1) rotate(-20deg);
+  }
+  .strelka{
+    left: 900px;
+    top: -30px;
+
+  }
+  .seti {
+    left: 70vw; /* вместо 1200px — адаптируется к ширине окна */
+    top: 700px;
+  }
+  
+  .content_seti{
+    transform: rotate(130deg);
+  }
+  /* Анимация только вертикального перемещения */
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

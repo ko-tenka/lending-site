@@ -1,0 +1,49 @@
+/* Loyaut.css */
+.loyaut_conteiner {
+    display: flex;
+    justify-content: space-between; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 15px; /* Отступы внутри контейнера */
+    padding-left: 35px;
+    padding-right: 35px;
+    flex-wrap: wrap; /* Перенос на новую строку при нехватке места */
+  }
+  
+  .loyaut_logocontent {
+    display: flex;
+    align-items: center; /* Выравнивание лого и текста по вертикали */
+    gap: 10px; /* Расстояние между лого и текстом */
+  }
+  
+  .loyaut__logo {
+    width: 150px;
+    height: auto; /* Сохраняем пропорции */
+  }
+
+  .loyaut__logotxt{
+     width: 150px;
+     padding-top: 10px;
+  }
+  
+  .loyaut__icon {
+    width: 40px;
+    height: 40px; /* Фиксируем размер иконок */
+    transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+  }
+  
+  .loyaut__icon:hover {
+    transform: scale(1.1); /* Увеличение иконки при наведении */
+  }
+  
+  /* Стили для телефонного номера */
+  .loyaut_conteiner > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  
+  .loyaut_conteiner a:hover {
+    color: #f8adf9; /* Цвет при наведении (можно изменить) */
+  }

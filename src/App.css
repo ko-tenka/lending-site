@@ -1,0 +1,45 @@
+.App_conteiner1 {
+  background-image: url('../../../public/Group.png');
+  background-size: cover;
+  background-position: center -350px; /* сдвигаем фон вверх */
+  background-repeat: no-repeat;
+  height: 1200px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Обёртка: отвечает за начальное позиционирование */
+.App_vector_wrapper {
+  position: absolute;
+  top: 250px;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Картинка внутри: только анимация */
+.App_vector {
+  width: 100%;
+  animation: floatUpDown 4s ease-in-out infinite;
+}
+
+.App_form{
+  position: relative;
+  margin-top: -200px;
+  z-index: 2;
+}
+
+
+@keyframes floatUpDown {
+  0%   {
+    transform: translateX(-50%) translateY(0);
+  }
+  50%  {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}

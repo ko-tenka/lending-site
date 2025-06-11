@@ -1,0 +1,118 @@
+.form_conteiner{
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+ 
+}
+.form__conteiner{
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+}
+.form__conteiner2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form__icon {
+  width: 30px; /* или нужный размер */
+}
+
+/* Фон и бордер для отмеченного чекбокса */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #6D01E7 !important; /* фиолетовый */
+  border-color: #6D01E7 !important; /* фиолетовый */
+}
+
+/* При наведении на отмеченный чекбокс (checked + hover) */
+.ant-checkbox-checked:hover .ant-checkbox-inner {
+  background-color: #6D01E7 !important; /* чтобы фон не менялся */
+  border-color: #6D01E7 !important; /* более светлый фиолетовый для hover */
+}
+
+/* При наведении на чекбокс (даже если не checked), изменить бордер */
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #6D01E7 !important;
+}
+
+/* При наведении и фокусе (например, при использовании клавиатуры) */
+.ant-checkbox-focused .ant-checkbox-inner {
+  box-shadow: 0 0 0 3px rgba(128, 0, 128, 0.2) !important; /* мягкая фиолетовая тень */
+}
+
+.ant-switch-checked {
+  background-color: #6D01E7 !important; /* фиолетовый */
+}
+.ant-input:focus, 
+.ant-input-focused {
+  border-color: #6D01E7 !important;
+  box-shadow: 0 0 0 2px rgba(109, 1, 231, 0.2); /* мягкое свечение */
+}
+
+/* Фиолетовая рамка при наведении */
+.ant-input:hover {
+  border-color: #6D01E7 !important;
+}
+
+
+.form__p1{
+    font-size: 46px;
+    color: rgba(109, 1, 231);
+}
+.form__p2{
+    font-size: 16px;
+}
+.form__check{
+    color: white;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background-color: rgba(109, 1, 231, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+  
+
+}
+
+.form__btn {
+    width: 30%;
+    background-color: #6D01E7;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .form__btn:hover {
+    background-color: #000000 !important;
+    color: white !important;
+  }
+  
+  
+
+.form_input{
+    color: white;
+}
+
+
+.modal__ok-btn {
+    background-color: #6D01E7!important;
+    color: white !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modal__ok-btn:hover {
+    background-color: #5600b8 !important; /* или тоже #000 */
+  }
+
+  .custom-modal .ant-modal-title {
+    color: #6D01E7;
+    margin-bottom: 20px;
+  }
+  .modal_check{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+  }
