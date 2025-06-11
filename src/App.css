@@ -1,5 +1,5 @@
 .App_conteiner1 {
-  background-image: url('../../../public/Group.png');
+  background-image: url('../../../public/group.png');
   background-size: cover;
   background-position: center -350px; /* сдвигаем фон вверх */
   background-repeat: no-repeat;
